@@ -8,7 +8,7 @@ function agregarAmigo(){
 
     //Capturar el input y el valor del mismo
     let inputAmigo = document.getElementById("amigo")
-    let nombreIngresado = inputAmigo.value;
+    let nombreIngresado = inputAmigo.value.toUpperCase();
 
     //Validar que el nombre sea valido
     if(nombreIngresado === ""){
@@ -28,7 +28,7 @@ function agregarAmigo(){
     }
 
     //Agregar nombre al array de amigos
-    nombresDeAmigos.push(nombreIngresado.toUpperCase());
+    nombresDeAmigos.push(nombreIngresado);
 
     //Llamar a la funcion que muestra los amigos en pantalla
     mostrarListaDeAmigos()
