@@ -16,14 +16,28 @@ function agregarAmigo(){
         return;
     }
 
+    //Validar que el nombre que se agrego no se haya repetido
+    if (nombresDeAmigos.includes(nombreIngresado)) {
+        alert("Este amigo ya ha sido agregado.");
+
+        //Limpiar el input y hacer foco en el
+        inputAmigo.value = '';
+        inputAmigo.focus();
+
+        return;
+    }
+
     //Agregar nombre al array de amigos
-    nombresDeAmigos.push(nombreIngresado);
+    nombresDeAmigos.push(nombreIngresado.toUpperCase());
 
     //Llamar a la funcion que muestra los amigos en pantalla
     mostrarListaDeAmigos()
 
     //Limpiar el campo de entrada
     inputAmigo.value = '';
+
+    //Deja el foco sobre el input
+    inputAmigo.focus();
 
     return;
 }
@@ -66,6 +80,10 @@ function sortearAmigo(){
     //Obtener elemento resultado y agregar su contenido con el amigo secreto
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `Tu amigo sorteado es ${amigoSecreto}`;
+
+    //Limpiar lista de amigos luego de sortearlos
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
 
     return;
 }
