@@ -1,7 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
 //Array de amigos
-let nombreAmigos = [];
+let nombresDeAmigos = [];
 
 //Funcion para agregar amigos
 function agregarAmigo(){
@@ -17,10 +17,27 @@ function agregarAmigo(){
     }
 
     //Agregar nombre al array de amigos
-    nombreAmigos.push(nombreIngresado);
+    nombresDeAmigos.push(nombreIngresado);
+
+    //Llamar a la funcion que muestra los amigos en pantalla
+    mostrarListaDeAmigos()
 
     //Limpiar el campo de entrada
     inputAmigo.value = '';
+
+    return;
+}
+
+function mostrarListaDeAmigos(){
+
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+
+    for(let i = 0; i < nombresDeAmigos.length; i++){
+        let itemDeLista = document.createElement("li");
+        itemDeLista.textContent = nombresDeAmigos[i];
+        listaAmigos.appendChild(itemDeLista);
+    }
 
     return;
 }
