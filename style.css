@@ -1,11 +1,12 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-primary: #1E3A8A;
+    --color-secondary: #FAF3E0;
+    --color-button-add: #4A4A4A;
+    --color-button-add-hover: #2C2C2C;
+    --color-button-sortear-hover: #102A66;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-amigo-resaltado: #3D8A41;
 }
 
 /* Estilos generales */
@@ -116,13 +117,13 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-button-add);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-add-hover);
 }
 
 /* Listas */
@@ -136,7 +137,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: var(--color-amigo-resaltado);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -149,7 +150,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: var(--color-button);
+    background-color: var(--color-primary);
     font-size: 16px;
 }
 
@@ -158,5 +159,5 @@ ul {
 }
 
 .button-draw:hover {
-    background-color: var(--color-button-hover);
+    background-color: var(--color-button-sortear-hover);
 }
