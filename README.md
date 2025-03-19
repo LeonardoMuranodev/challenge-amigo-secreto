@@ -1,7 +1,14 @@
 # 🙍‍♂️ Amigo Secreto - Challenge
 
+![Portada de la aplicacion web Amigo Secreto: se muestra un diseño con un personaje ilustrado, el titulo 'Amigo Secreto', un formulario para ingresar nombres y botones 'Añadir' y 'Sortear Amigos'.](assets/portada-readme.png)
+
 ## 📝 Descripción
 Este proyecto es un desafío de "Amigo Secreto" desarrollado en HTML, CSS y JavaScript. Permite agregar nombres de amigos, listarlos y realizar un sorteo aleatorio para seleccionar a un amigo secreto.
+
+## 🏁 Estado de proyecto
+Este proyecto ha sido completado exitosamente. Todas las funcionalidadews han sido implementadas y probadas. No se planean futuras actualizaciones o cambios importantes.
+El código se encuentra en su versión final y está disponible para su uso o referencia
+
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
